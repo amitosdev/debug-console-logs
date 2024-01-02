@@ -1,0 +1,25 @@
+{
+  "name": "debug-console-logs",
+  "version": "0.0.1",
+  "description": "A very lightweight module to print logs via console only if needed",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.test.js"
+  },
+  "type": "module",
+  "author": "Amit Tal",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/amitosdev/debug-console-logs#readme",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier-standard": "^4.0.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "3.1.1",
+    "prettier-config-standard": "^7.0.0"
+  }
+}
