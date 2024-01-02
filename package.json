@@ -1,6 +1,6 @@
 {
   "name": "debug-console-logs",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A very lightweight module to print logs via console only if needed",
   "main": "index.js",
   "scripts": {
