@@ -6,7 +6,6 @@ export default class DebugConsoleLogs {
   } = {}) {
     this._nameSpace = nameSpace
     this._isDebug = enable || DebugConsoleLogs.isDebug(nameSpace, browserKey)
-    console.log('this._isDebug', this._isDebug)
   }
 
   static isDebug(nameSpace, browserKey) {
