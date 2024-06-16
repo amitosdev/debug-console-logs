@@ -1,7 +1,12 @@
 export default class DebugConsoleLogs {
-  constructor(nameSpace = 'debug-console-logs', browserKey = '__debug__') {
+  constructor({
+    nameSpace = 'debug-console-logs',
+    browserKey = '__debug__',
+    enable = false
+  } = {}) {
     this._nameSpace = nameSpace
-    this._isDebug = DebugConsoleLogs.isDebug(nameSpace, browserKey)
+    this._isDebug = enable || DebugConsoleLogs.isDebug(nameSpace, browserKey)
+    console.log('this._isDebug', this._isDebug)
   }
 
   static isDebug(nameSpace, browserKey) {

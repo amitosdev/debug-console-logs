@@ -49,10 +49,11 @@ localStorage.setItem('__debug__', '1');
 
 ## API
 
-### `debugConsoleLogs(nameSpace = 'debug-console-logs', browserKey = '__debug__')`
+### `debugConsoleLogs({ nameSpace = 'debug-console-logs', browserKey = '__debug__', enable = false })`
 
 - `nameSpace`: A string to identify the logger's namespace (default: 'debug-console-logs').
 - `browserKey`: A key used in localStorage to toggle debug mode in the browser (default: '__debug__').
+- `enable`: Explicit enable logs (default: 'false').
 
 ### `log(...args)`
 
