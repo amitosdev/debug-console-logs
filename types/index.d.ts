@@ -2,10 +2,16 @@ export default class DebugConsoleLogs {
   /**
    * Constructs a new DebugConsoleLogs instance.
    *
-   * @param nameSpace The namespace used for the debug console logs, defaulting to 'debug-console-logs'.
-   * @param browserKey The key used to check in the browser's localStorage for debug enabling, defaulting to '__debug__'.
+   * @param options The options for the constructor.
+   * @param options.nameSpace The namespace used for the debug console logs, defaulting to 'debug-console-logs'.
+   * @param options.browserKey The key used to check in the browser's localStorage for debug enabling, defaulting to '__debug__'.
+   * @param options.enable A boolean to explicitly enable debug mode, defaulting to false.
    */
-  constructor(nameSpace?: string, browserKey?: string)
+  constructor(options?: {
+    nameSpace?: string
+    browserKey?: string
+    enable?: boolean
+  })
 
   /**
    * Determines whether debugging is enabled based on environment settings or browser localStorage.
