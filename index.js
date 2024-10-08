@@ -11,10 +11,18 @@ export default class DebugConsoleLogs {
   static isDebug(nameSpace, browserKey) {
     if (typeof window === 'undefined') {
       if (process.env.DEBUG === '*') return true
-      return process.env.DEBUG?.split(',').includes(nameSpace) || false
+      return (
+        (process.env.DEBUG &&
+          process.env.DEBUG.split(',').includes(nameSpace)) ||
+        false
+      )
     }
 
-    return window.localStorage?.getItem(browserKey) === '1' || false
+    return (
+      (window.localStorage &&
+        window.localStorage.getItem(browserKey) === '1') ||
+      false
+    )
   }
 
   _printLogs(mode, args) {
